@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pig Sales</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">U8ec7x5sZOGwog9W7iV0V4V54Ct5rYUrfAYGN</string>
+</resources>

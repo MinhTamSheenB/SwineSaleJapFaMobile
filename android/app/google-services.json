@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "49361018105",
+    "project_id": "swinesales-768dc",
+    "storage_bucket": "swinesales-768dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49361018105:android:5716718147f4682eb69628",
+        "android_client_info": {
+          "package_name": "com.swinesalern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49361018105-ppqnri9sbkd0ov02nvpd4tg6h5osb6lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbtGzXG5pqJYaTKGF5BHLJqQWCYa0G54o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49361018105-ppqnri9sbkd0ov02nvpd4tg6h5osb6lu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "49361018105-abb39dm1ri4bmsfv608f0499t2uhcgtl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Japfa.JapfaPigSales"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

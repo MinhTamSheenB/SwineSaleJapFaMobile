@@ -1,0 +1,179 @@
+import {IScaleDetailDTO, ISearchCommon} from './types.service';
+
+export interface IScaleNoteDownItemDTO extends IScaleDetailDTO {
+  ROOTSCALEID?: string;
+
+  SCALEDOWNDETAILS: IScaleNoteDownDetailDTO[];
+  PRODUCTDOWN?: number;
+  PRODUCTDOWNDESC?: string;
+  OLDSCALEID?: string;
+  NEWPRODUCTCODE?: string;
+  REASON?: string;
+  TMPWEIGHTID?: number;
+  NAME_VN?: string;
+  AMOUNT: number;
+}
+
+export interface IScaleNoteDownDetailDTO {
+  CUSTGRP?: string;
+  UNITGRP?: string;
+  LOCATGRP?: string;
+  FLOCKGRP?: string;
+  ALLOW_WEIGH_GREATER?: boolean;
+  PRODUCTCODE?: string;
+  PRODUCTID?: string;
+  MEASURE?: string;
+  SONO?: string;
+  SALEMAN?: string;
+  DISCOUNT?: number;
+  DISCOUNTNOTE?: string;
+  DONO?: string;
+  DOTYPENAME?: string;
+  AUTOID?: number;
+  SCALEID?: string;
+  SCALENO?: string;
+  WEIGHMAN?: string;
+  SCALEDATE?: string;
+  TRUCKNO?: string;
+  ARRIVALTIME?: string;
+  DEPARTTIME?: string;
+  FLOCKCODE?: string;
+  FLOCKNAME?: string;
+  LOCATIONID?: string;
+  LOCATIONNAME?: string;
+  LOCATIONADDRESS?: string;
+  NAME_VN?: string;
+  CUSTID?: string;
+  CUSTNAME?: string;
+  CUSTADD?: string;
+  RECEIVERNAME?: string;
+  PLACEDELIVERY?: string;
+  DOSTATUS?: number;
+  SOSTATUS?: number;
+  SODATE?: string;
+  DODATE?: string;
+  REGIONID?: string;
+  OFFICEID?: number;
+  UNITID?: string;
+  UNITNAME?: string;
+  DEPTID?: number;
+  TOTALQTY?: number;
+  NETGROSS?: number;
+  AVGWIGHT?: number;
+  SAVED_AVGWIGHT?: number;
+  PRICE1?: number;
+  PRICE2?: number;
+  SALEOFF_ID?: string;
+  PRICEGROUP?: string;
+  REDUCEPRICE1?: number;
+  REDUCEPRICE2?: number;
+  AMOUNT?: number;
+  PLUSAMOUNT1?: number;
+  PLUSAMOUNT2?: number;
+  SUBAMOUNT1?: number;
+  SUBAMOUNT2?: number;
+  FORMULARID?: number;
+  UPDATEBY?: string;
+  UPDATETIME?: string;
+  STATUS?: number;
+  KMSTART?: number;
+  KMARRIVED?: number;
+  QTYPACK?: number;
+  QTYPERPACK?: number;
+  TOTALGROSS?: number;
+  PACKWEIGHT?: number;
+  REMAKS?: string;
+  AVGAGE?: string;
+  USERNAME?: string;
+  PRINTTIME?: string;
+  IMPCODE?: string;
+  SCALELOCK?: number;
+  TRANSALE?: number;
+  LASTUPDATE?: string;
+  COMNO?: string;
+  SCALENAME?: string;
+  EXTPRODNAME?: string;
+  DONO_INFOGROUP?: string;
+  DONO_INFOGROUP2?: string;
+  DONO_TOTALQTY?: number;
+  ACT_TOTALWEIGH?: number;
+  PRODUCTDOWN?: number;
+  PRODUCTDOWNDESC?: string;
+  OLDSCALEID?: string;
+  NEWPRODUCTCODE?: string;
+  REASON?: string;
+  TMPWEIGHTID?: number;
+}
+
+export interface IScaleDOItem extends ISearchCommon {
+  DONO: string;
+  CUSTNAME: string;
+  DETAILS: IScaleDetailDTO[];
+}
+
+export interface IScaleNoteDownModel {
+  UPDATEBY?: string;
+  UPDATETIME?: string;
+  STATUS?: number;
+  SCALEID?: string;
+  SCALENO?: string;
+  SCALEDATE?: string;
+  DONO: string;
+  TRUCKNO: string;
+  ARRIVALTIME: string;
+  DEPARTTIME: string;
+  KMSTART?: number;
+  KMARRIVED?: number;
+  PRODUCTCODE: string;
+  MEASURE?: string;
+  QTYPACK?: number;
+  QTYPERPACK?: number;
+  TOTALGROSS?: number;
+  TOTALQTY: number;
+  NETGROSS: number;
+  AVGWIGHT: number;
+  PRICE1?: number;
+  PRICE2?: number;
+  SALEOFF_ID?: string;
+  PRICEGROUP?: string;
+  REDUCEPRICE1?: number;
+  REDUCEPRICE2?: number;
+  AMOUNT?: number;
+  PACKWEIGHT?: number;
+  FLOCKCODE: string;
+  FLOCKNAME: string;
+  WEIGHMAN: string;
+  REMAKS?: string;
+  AVGAGE?: string;
+  USERNAME?: string;
+  PRINTTIME?: string;
+  IMPCODE?: string;
+  SCALELOCK?: number;
+  TRANSALE?: number;
+  LASTUPDATE?: string;
+  COMNO?: string;
+  REGIONID: string;
+  OFFICEID: number;
+  UNITID: string;
+  DEPTID: number;
+  ALLOW_WEIGH_GREATER?: boolean;
+  SCALENAME?: string;
+  EXTPRODNAME?: string;
+  PRODUCTDOWN?: number;
+  PRODUCTDOWNDESC?: string;
+  OLDSCALEID?: string;
+  NEWPRODUCTCODE?: string;
+  REASON?: string;
+  TMPWEIGHTID?: number;
+
+  // Local
+  ROOTSCALEID?: string;
+  NAME_VN?: string;
+  CUSTNAME: string;
+  LOCATIONADDRESS?: string;
+  LOCATIONNAME?: string;
+  RECEIVERNAME?: string;
+  SCALEDOWNDETAILS: IScaleNoteDownDetailDTO[];
+}
+
+export interface IScaleNoteDownDetailModel extends IScaleNoteDownDetailDTO {}
