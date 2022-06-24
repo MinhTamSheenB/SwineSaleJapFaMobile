@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export hihi -- da sua kk ---- no collarborator*/
+/* eslint-disable import/prefer-default-export hihi -- da sua kk ---- no collarborator--- sub.dark1---> dark(7)*/
 import * as Yup from 'yup';
 
 export const DiscountFormValidate = Yup.object().shape({
