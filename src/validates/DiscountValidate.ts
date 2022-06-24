@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export hihi */
+/* eslint-disable import/prefer-default-export hihi -- da sua kk */
 import * as Yup from 'yup';
 
 export const DiscountFormValidate = Yup.object().shape({
