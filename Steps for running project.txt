@@ -1,50 +1,9 @@
 Steps for running project
--- set permision for current folder ( with admin Terminal) before running yarn
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
-https://www.nextofwindows.com/fix-unable-to-run-yarn-in-windows-terminal-powershell
 
-
-npm install -g yarn
 yarn
-----
+
 cd android
 ./gradlew clean
 cd..
-
-
------------------------
-npm start
 npx react-native run-android
-
-------------------
-cd android && ./gradlew assembleRelease
-Your APK will get generated at: android/app/build/outputs/apk/app-release.apk
-
-************************** update link *****************************
-export const API_URL = 'https://apps.japfa.com.vn:52055/';
-// export const API_URL = 'https://swinesouth.japfa.com.vn:62173/';
-export const PRICE_API_URL = 'https://apps.japfa.com.vn:62048/api/';
-export const MASTER_URL = 'https://e-approval1.japfa.com.vn:62070/api/';
-export const AUTH_URL = 'http://apps.japfavietnam.com:62064/api/';
-****************************************************************************************
-
-
-
-
---- ***** fix bugs ( build ok but can't run)
-1.error
-    about appcenter
-===> search "appcenter" --> remove ^
-
-
-
-
-2. error 
-    react native error Could not determine the dependencies of task ':react-native-code-push:compileDebugAidl'.
-https://github.com/microsoft/react-native-code-push/issues/1613#issuecomment-1123926386
-
-==> I fix by add mavenCentral
-
-
-
 
