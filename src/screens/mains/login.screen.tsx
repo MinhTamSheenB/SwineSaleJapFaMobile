@@ -39,7 +39,7 @@ const LoginScreen = () => {
 
   return (
     <SafeView>
-      <Header isMenu={false} title="Đăng Nhập Hệ Thống" noShadow disableThreeDot />
+      <Header isMenu={false} title="Đăng Nhập Hệ Thống" noShadow />
       <ADLoginView
         context={rNativeAd}
         onSuccess={(adc) => onLoginSuccess(adc)}
