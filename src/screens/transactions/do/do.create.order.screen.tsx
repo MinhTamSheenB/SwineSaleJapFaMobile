@@ -7,7 +7,7 @@ import {DoWizard, DoOrderInformation} from '~/containers/transactions/Do';
 const DoCreateOrderScreen = () => {
   return (
     <SafeView>
-      <Header title={AppStrings.DO.DeliveryTitle} noShadow isMenu={false} />
+      <Header title={AppStrings.DO.DeliveryTitle} noShadow isMenu={false} disableThreeDot/>
       <DoWizard currentStep={0} />
       <DoOrderInformation />
     </SafeView>

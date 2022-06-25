@@ -36,7 +36,7 @@ const DoCreateProductScreen = () => {
 
   return (
     <SafeView>
-      <Header title="Thêm Hàng Hóa" isMenu={false} noShadow />
+      <Header title="Thêm Hàng Hóa" isMenu={false} noShadow disableThreeDot/>
       <Formik
         initialValues={itemModel}
         onSubmit={(values) => {

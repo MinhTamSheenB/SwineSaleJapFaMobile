@@ -38,7 +38,7 @@ const SetupPassCodeScreen = () => {
 
   return (
     <SafeView style={styles.container}>
-      <Header noShadow title="Cài Đặt Mã PIN" isMenu={false} />
+      <Header noShadow title="Cài Đặt Mã PIN" isMenu={false} disableThreeDot />
       <View
         style={{
           justifyContent: 'center',

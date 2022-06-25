@@ -13,7 +13,7 @@ const WebWiewScreen = () => {
 
   return (
     <SafeView>
-      <Header title={title} isMenu={false} noShadow />
+      <Header title={title} isMenu={false} noShadow disableThreeDot />
       <WebView
         source={{uri}}
         startInLoadingState

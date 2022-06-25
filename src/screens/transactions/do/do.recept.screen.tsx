@@ -21,7 +21,7 @@ const DoReceptScreen = () => {
   const {isInternalTransfer} = useSelector((state: RootState) => state.global);
   return (
     <SafeView>
-      <Header title={AppStrings.DO.DeliveryTitle} isMenu={false} />
+      <Header title={AppStrings.DO.DeliveryTitle} isMenu={false} disableThreeDot />
       <DoWizard currentStep={1} />
       <Formik
         enableReinitialize

@@ -44,7 +44,7 @@ const CndnTotalPaymentScreen = () => {
 
   return (
     <SafeView>
-      <Header title={AppStrings.Cndn.titleCreate} isMenu={false} noShadow />
+      <Header title={AppStrings.Cndn.titleCreate} isMenu={false} noShadow disableThreeDot />
       <CndnWizard currentStep={2} />
       <Formik
         initialValues={model}

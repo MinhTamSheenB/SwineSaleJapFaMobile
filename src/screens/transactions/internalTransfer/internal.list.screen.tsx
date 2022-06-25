@@ -6,7 +6,7 @@ import {AppStrings} from '~/configs';
 const InternalListScreen = () => {
   return (
     <>
-      <Header title={AppStrings.IN_TF.title} isMenu />
+      <Header title={AppStrings.IN_TF.title} isMenu disableThreeDot />
     </>
   );
 };

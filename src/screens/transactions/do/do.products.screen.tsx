@@ -60,7 +60,7 @@ const DoProductsScreen = () => {
 
   return (
     <SafeView>
-      <Header title={AppStrings.DO.DeliveryTitle} isMenu={false} />
+      <Header title={AppStrings.DO.DeliveryTitle} isMenu={false} disableThreeDot />
       <Container>
         <DoWizard currentStep={2} />
         <FlatListCommon

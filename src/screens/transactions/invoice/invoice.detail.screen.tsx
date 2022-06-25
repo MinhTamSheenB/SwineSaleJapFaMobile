@@ -103,7 +103,7 @@ const InvoiceDetailScreen = () => {
 
   return (
     <SafeView>
-      <Header title="Thông Tin Hóa Đơn" isMenu={false} />
+      <Header title="Thông Tin Hóa Đơn" isMenu={false} disableThreeDot />
 
       <Container isIncludeScrollView>
         <Accordion title="Thông Tin Khách Hàng" isOpen>

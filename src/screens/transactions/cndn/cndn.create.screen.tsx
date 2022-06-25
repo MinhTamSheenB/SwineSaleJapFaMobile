@@ -7,7 +7,7 @@ import {CndnCustomerForm, CndnWizard} from '~/containers/transactions/Cndn';
 const CndnCreateScreen = () => {
   return (
     <SafeView>
-      <Header title={AppStrings.Cndn.titleCreate} isMenu={false} noShadow />
+      <Header title={AppStrings.Cndn.titleCreate} isMenu={false} noShadow disableThreeDot />
       <CndnWizard currentStep={1} />
       <CndnCustomerForm />
     </SafeView>

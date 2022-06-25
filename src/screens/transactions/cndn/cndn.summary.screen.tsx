@@ -115,7 +115,7 @@ const CndnSummaryScreen = () => {
 
   return (
     <SafeView>
-      <Header title="Thông Tin Điều Chỉnh" isMenu />
+      <Header title="Thông Tin Điều Chỉnh" isMenu disableThreeDot />
       <CndnSummary cndnNo={cndnNo} />
       <View style={styles.actionContainer}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>

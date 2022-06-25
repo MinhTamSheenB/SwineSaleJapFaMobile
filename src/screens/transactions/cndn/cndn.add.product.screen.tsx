@@ -6,7 +6,7 @@ import CndnAddProduct from '~/containers/transactions/Cndn/CndnAddProduct';
 const CndnAddProductScreen = () => {
   return (
     <SafeView>
-      <Header title="Thêm Sản Phẩm" isMenu={false} />
+      <Header title="Thêm Sản Phẩm" isMenu={false} disableThreeDot />
       <CndnAddProduct />
     </SafeView>
   );
