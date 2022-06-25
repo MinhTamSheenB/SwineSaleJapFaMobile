@@ -1,0 +1,45 @@
+export const XML = (
+    customerName:any,
+    customerID:any,
+    customerAddress:any,
+    customerPhone:any,
+    senderName:any,
+    senderAddress:any,
+    deliveryDate:any,
+    deliveryplace:any,
+    doNo:any,
+    soNo:any,
+    vehicleNo:any,
+    totalQuantity:any,
+    totalWeight:any,
+    regionID:any,
+    officeID:any,
+    deptID:any,
+    senderID:any,
+    unitID:any,
+    row:any,
+
+) =>`<?xml version="1.0" encoding="utf-8"?>
+<DO>
+  <HD>
+    <REGIONID>${regionID}</REGIONID>
+    <OFFICEID>${officeID}</OFFICEID>
+    <DEPTID>${deptID}</DEPTID>
+    <UNITID>${unitID}</UNITID>
+    <DONO>${doNo}</DONO>
+    <DODATE>${deliveryDate}</DODATE>
+    <DOCUSTNO>${customerID}</DOCUSTNO>
+    <CUSTNAME>${customerName}</CUSTNAME>
+    <FARMCODE>${senderID}</FARMCODE>
+    <FARMNAME>${senderName}</FARMNAME>
+    <FLOCKFORMAT>??????????</FLOCKFORMAT>
+    <FARMADDRESS>${senderAddress}</FARMADDRESS>
+    <TRUCKNO>${vehicleNo}</TRUCKNO>
+    <DRIVERNAME>??????????</DRIVERNAME>
+    <RECEIVERNAME>${customerName}</RECEIVERNAME>
+    <RECEIVERADDRESS>${deliveryplace}</RECEIVERADDRESS>
+  </HD>
+  <DT>${row}</DT>
+  <PRODUCT/>
+</DO>
+`

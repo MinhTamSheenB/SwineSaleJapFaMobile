@@ -192,3 +192,21 @@ export function convertStringToSqliteDatetime(strDate: string): string {
     `${DateFormat.PATTEN_DATE_FORMAT} ${DateFormat.HH_MM_SS}`,
   ).format(DateFormat.SQLITE);
 }
+
+//format number Decimals
+export function normaliseValue (value: string, decimals = 2):string {
+  if (!value) {
+    return ''
+  }
+  if (value === '.') {
+    return value = '0.'
+  }
+
+  var regex = new RegExp(`^-?\\d+(?:\\.\\d{0,${decimals}})?`)
+  const decimalsNumber = value.toString().match(regex)[0]
+  const parsed = parseFloat(decimalsNumber).toFixed(2)
+  if (isNaN(parsed)) {
+    return '0'
+  }
+  return parsed
+}

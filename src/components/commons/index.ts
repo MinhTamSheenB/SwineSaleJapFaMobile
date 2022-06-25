@@ -20,6 +20,9 @@ import PassCode from './PassCode';
 import PassCodeKeyBoard from './PassCodeKeyboard';
 import SafeView from './SafeView';
 import NotFound from './NotFound';
+import {HTML} from './HTML'
+import { XML } from './XML';
+import PrintButton from './PrintButton';
 
 export {
   NotFound,
@@ -43,4 +46,7 @@ export {
   CheckBox,
   PassCode,
   PassCodeKeyBoard,
+  XML,
+  HTML,
+  PrintButton,
 };

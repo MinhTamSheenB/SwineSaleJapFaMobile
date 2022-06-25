@@ -587,10 +587,12 @@ export interface IDoHeaderModel extends ISoDoHeaderModelCommon {
   STATUS?: DeliveryOrderStatus;
   UPDATEDATE?: string;
   LOCATIONNAME?: string;
+  LOCATIONADDRESS?:string;
   CUSTNAME: string;
   TOTALAMTAFTERVAT: number;
   SKIP_SCALE_QTY_VALID: boolean;
   UNITIDTO?: string;
+  BW_TOTAL?:string;
 }
 
 //#endregion
