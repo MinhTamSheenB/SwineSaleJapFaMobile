@@ -111,7 +111,7 @@ const DoSummaryScreen = () => {
     senderName: headerInfo?.LOCATIONNAME ?? '---',
     senderAddress: headerInfo?.LOCATIONADDRESS ?? '---',
     deliveryDate: convertStringDateToDdMmYyyy(headerInfo?.DODATE, 'date'),
-    deliverDate2: convertStringDateToMdDdYyyy(`${headerInfo?.DODATE}`),
+    deliverDate2: `${convertStringDateToDdMmYyyy(headerInfo?.DODATE, 'date').split('/')[1]}/${convertStringDateToDdMmYyyy(headerInfo?.DODATE, 'date').split('/')[0]}/${convertStringDateToDdMmYyyy(headerInfo?.DODATE, 'date').split('/')[2]}`,
     deliveryplace: headerInfo?.PLACEDELIVERY ?? '---',
     doNo: headerInfo?.DONO ?? '---',
     soNo: headerInfo?.SONO ?? '---',
