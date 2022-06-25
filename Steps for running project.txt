@@ -1,6 +1,7 @@
 Steps for running project
 ....
 22
+333
 yarn
 
 cd android
