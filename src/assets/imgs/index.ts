@@ -6,6 +6,7 @@ const imgs = {
   fingerId: require('./finger_id.png'),
   eyeId: require('./eye_id.png'),
   pinId: require('./pin_id.png'),
+  touch: require('./touch.png'),
 
   bg1: require('./bg1.jpeg'),
   bg2: require('./bg2.png'),

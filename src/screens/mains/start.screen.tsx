@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import {useNavigation} from '@react-navigation/core';
 import React, {useCallback, useEffect} from 'react';
-import {View, Text, StyleSheet, ImageBackground, Image} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground, Image, TouchableOpacity} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import imgs from '~/assets/imgs';
 import {Colors} from '~/configs';
@@ -47,6 +47,12 @@ const StartScreen = () => {
         </Text>
       </View>
 
+      <View style={styles.body}>
+        <TouchableOpacity style={styles.buttons} onPress={()=>{navigate.navigate(ScreenType.Main.Login);}}>
+            <Text style={styles.buttonText}>ĐĂNG NHẬP</Text>
+        </TouchableOpacity>
+      </View>
+
       <ImageBackground
         resizeMode="cover"
         source={imgs.bg2}
@@ -62,4 +68,28 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.WHITE,
   },
+  body:{
+    justifyContent:'center',
+    alignItems:'center',
+
+  },
+  buttons:{
+    borderRadius:30,
+    backgroundColor:'#4285F4',
+    height:40,
+    padding:25,
+    justifyContent:'center',
+    shadowOffset: {width: 2, height: 5},
+    shadowOpacity: 0.1,
+    shadowColor: '#000',
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+
+  },
+  buttonText:{
+    color:'white',
+    fontWeight:'bold',
+  },
+  
 });
+
