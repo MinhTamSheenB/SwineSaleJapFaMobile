@@ -3,6 +3,9 @@ Steps for running project
 22
 333
 000
+---
+edit by sb
+
 yarn
 
 cd android
