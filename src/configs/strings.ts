@@ -1,9 +1,9 @@
-export const API_URL = 'http://apps.japfa.com.vn:62072/';
+export const API_URL = 'https://swinesouth.japfa.com.vn:62169/';
 // export const API_URL = 'https://swinesouth.japfa.com.vn:62173/';
-export const PRICE_API_URL = 'http://apps.japfa.com.vn:62048/api/';
-export const MASTER_URL = 'https://apps.japfa.com.vn:62070/api/';
+export const PRICE_API_URL = 'https://apps.japfa.com.vn:62048/api/';
+export const MASTER_URL = 'https://e-approval1.japfa.com.vn:62070/api/';
 export const AUTH_URL = 'http://apps.japfavietnam.com:62064/api/';
-//test
+
 export const PASSCODE_SECRET_KEY = 'bdb51f41fba865ec';
 
 export const masterConstant = {
